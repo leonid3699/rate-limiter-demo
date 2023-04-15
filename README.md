@@ -4,7 +4,7 @@ Run DemoControllerTest.testCreateUser() to simulate concurrent requests for the 
 
 The test case will access DemoController.createUser(@RequestParam String name) to create new users with given names and save to H2 memory DB. 
 
-@Throttling(tps = 1) is the rate limiter configured for the API.
+@Throttling(tps = 1) is the rate limiter configured for the API in DemoController.java.
 
 We can change tps value to test different limiter rates. 
 
