@@ -22,7 +22,6 @@ public class DemoController {
     @LogRuntime
     @Throttling(tps = 5)
     public String sayHello(@PathVariable String name) {
-        //
         return "hello " + name;
     }
 
@@ -32,9 +31,8 @@ public class DemoController {
     }
 
     @RequestMapping(path = "/user", method = RequestMethod.POST)
-    @LogRuntime
-    @Throttling(tps = 10)
-    public Long create(@RequestParam String name) {
+    @Throttling(tps = 1)
+    public Long createUser(@RequestParam String name) {
         User user = new User();
         user.setName(name);
         return userRepository.save(user).getId();

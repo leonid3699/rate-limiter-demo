@@ -1,6 +1,7 @@
 server:
-  port: 80
-
+  port: 8080
+#application:
+#  throttlingDisabled: true
 spring:
   datasource:
     driverClassName: org.h2.Driver
@@ -17,7 +18,3 @@ spring:
         show_sql: false
         use_sql_comments: true
         format_sql: true
-  h2:
-    console:
-      enabled: true
-      path: /h2-console

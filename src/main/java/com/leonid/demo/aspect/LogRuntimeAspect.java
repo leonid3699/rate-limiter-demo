@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 public class LogRuntimeAspect {
     final Logger logger = LoggerFactory.getLogger(LogRuntimeAspect.class);
 
-    private class Timer {
+    public static class Timer {
         private long startTime;
 
         public Timer(long startTime) {
