@@ -1,0 +1,6 @@
+POST http://localhost/demo/user
+Content-Type: application/x-www-form-urlencoded
+
+name=Tom
+
+###
